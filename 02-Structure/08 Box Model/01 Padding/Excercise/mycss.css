@@ -1,0 +1,30 @@
+.background {
+    background: black;
+}
+h1, p {
+    font-family: sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 80%;
+    max-width: 1000px;
+}
+
+.box1 {
+    background: steelblue;
+    height: 150px;
+    padding: 50px;
+
+
+}
+
+.box2 {
+    background: white;
+    padding: 50px;
+}
+
+.box3 {
+    background: black;
+    padding: 50px;
+    color: white;
+}

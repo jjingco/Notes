@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "whatever name I want";
+    src: url('../fonts/OpenSans-Regular.ttf')
+    /*a@font-face is defining a font locally since we downloaded it*/
+}
+
+
+h1 {font-size: 24px;
+    text-align: center;
+    text-transform: uppercase; /*never change the text in your data*/
+    font-family: 'whatever name I want', sans-serif;
+    /*IF YOU SPECIFY WEIGHT IT WON'T WORK...need to @font-face and specify the font as the opensans-bold.*/
+
+}
+
+p {
+    font-size: 16px;  /*standard default is 16px*/
+    /* font-weight: lighter; default weight is 400 or normal, 300 is thin, 600 is bold and 900 is black*/
+    /*font-style: italic;*/
+    /*letter-spacing: 2px; --> space between each letter - 2px usually used for header targeting a particular style*/
+    line-height: 1.6;
+    font-family: "Arial", sans-serif;    /*font stack -specifying the font and saying that the default is sans-serif*/
+    /*F12 to look up coding in Chrome*/
+    /*usually want to import your own font into a site --> Google Fonts*/
+    /*if you're importing a font, you need to specify all the weights you need or it won't import those styles in that weight*/
+    /*if you look at Network on F12 you can see the speed of your website...under 15ms is usually good.*/
+}

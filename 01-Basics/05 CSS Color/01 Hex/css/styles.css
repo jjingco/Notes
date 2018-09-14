@@ -1,0 +1,12 @@
+h1 {
+    color: #ff0000; /*'rgb' code gives a spectrum of colours, F12 allows you to see other colours if you click on the colour box*/
+    color: rgb(20, 100, 250); /*can do same with background-color*/
+    color: hsl(90, 50%, 20%);
+
+    background: green;
+    /*color: rgba(255,255, 255, 0.5);
+    color: hsla(255, 0%, 100%, 0.5); */ /*a stands for alpha*/
+    color: white;
+    opacity: 0.5; /*opacity is good because it turns the whole thing rather than just the letters */
+    /*adobe color cc is good because it's a colour wheel that shows complementary colours*/
+}

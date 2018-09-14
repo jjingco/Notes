@@ -1,0 +1,23 @@
+.main,.secondary, .third {
+    float: left;
+}
+
+.main {
+    width: 33%;
+    margin-right: 20px;
+}
+
+.secondary {
+    width: calc(33% - 20px);
+    margin-right: 20px;
+}
+
+.third {
+    width: calc(33% - 20px);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

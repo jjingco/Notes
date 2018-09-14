@@ -1,0 +1,40 @@
+h1 {
+    font-family: sans-serif;
+}
+
+.pix2 {
+    background: lightseagreen;
+    width:200px;
+    height: 50px;
+}
+
+.pix5 {
+    background: lightseagreen;
+    width: 500px;
+    height: 50px;
+}
+
+.pix9 {
+    background: lightseagreen;
+    width: 900px;
+    height: 50px;
+}
+
+
+.per2 {
+    background: orange;
+    width: 20%;
+    height: 50px;
+}
+
+.per5 {
+    background: orange;
+    width: 50%;
+    height: 50px;
+}
+
+.per9 {
+    background: orange;
+    width: 90%;
+    height: 50px;
+}

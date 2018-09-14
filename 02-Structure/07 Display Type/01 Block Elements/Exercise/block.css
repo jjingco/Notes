@@ -1,0 +1,20 @@
+h1 {
+    font-family: sans-serif;
+}
+
+.block {
+    background: steelblue;
+    height: 50px;
+}
+
+.inline {
+    background: orange;
+    display: inline;
+}
+
+.inlineb {
+    background: orange;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}

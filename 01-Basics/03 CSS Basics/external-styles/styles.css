@@ -1,0 +1,22 @@
+.team-section {
+    background: lightgray;
+}
+
+.green {color: green;
+}
+.red {color: red;
+}
+.blue {color: blue;
+}
+#purple {color: purple;
+}
+
+/* you can stack multiple selectors if you use classes*/
+/*if you add a comma after the team-section, you style all paragraphs and all team-sections*/
+/*if you don't put a common you only style the paragraphs that have .team-section*/
+
+.team-section p {
+    opacity: 0.3;
+}
+
+/*css reset normalized your styles so it looks the same consistently between browsers*/

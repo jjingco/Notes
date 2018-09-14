@@ -1,0 +1,37 @@
+.box {
+    background: red;
+    height: 100px;
+    width: 200px;
+}
+
+.box p {
+    font-size: 20px;  /* in the long-run may want to specify if you want to override the stuff on top*/
+}
+
+.box-relative-container {
+    background: green;
+    width: 80%;
+    /*height: 100px;*/
+}
+
+.box-relative {
+    background: pink;
+    width: 50%;
+   /* height: 100px;*/ /*when no content then the boxes disappear, with then it responds to the content -the content defines it*/
+}
+
+/*.box-relative p {
+    width: 400px;
+}*/
+/*if you don't give it a width the text stays in the pink box if you do then it can go into the green one*/
+/*em represents the default text value eg the default font = 16px thus one em is equal to 16px*/
+
+
+.em-container {
+    font-size: 2em;
+}
+
+.em-container-2 {
+    font-size: 1em;  /*it's context depends on its parent which is 32px thus, it stays at 32px = 1em*/
+}
+

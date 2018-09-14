@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- added the normalized linktag below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <!-- you need to link your CSS onto your html to get the styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hello</h1>
+    <!-- classes are stackable and can be used multiple times, ID cannot -->
+    <!-- thus might just want to use classes and NOT id's -->
+    <!-- Id's are also stronger (weigh more) so it will overwrite your classes -->
+    <!-- if they're both classes and stacked together, the second will overwrite the first -->
+    <section class="green team-section">
+        <h1>Green Team</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolores neque culpa. Optio vero laborum veniam mollitia consectetur assumenda officiis! Sit, blanditiis. Pariatur assumenda temporibus fugit alias consequuntur recusandae impedit?</p>
+    </section>
+    <section class="red team-section">
+         <h1>Red Team</h1>
+         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt tenetur hic est rem non natus, temporibus eaque, earum doloribus expedita enim autem delectus, sequi cumque nostrum magni qui? Nobis?</p>
+    </section>
+    <section class="blue">
+         <h1>Blue Team</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt tenetur hic est rem non natus, temporibus eaque, earum doloribus expedita enim autem delectus, sequi cumque nostrum magni qui? Nobis?</p>
+    </section>
+    <section id="purple">
+        <h1>Purple Team</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt tenetur hic est rem non natus, temporibus eaque, earum doloribus expedita enim autem delectus, sequi cumque nostrum magni qui? Nobis?</p>
+    </section>
+</body>
+</html>

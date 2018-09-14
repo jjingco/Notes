@@ -1,0 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+/*box-sizing defines the boxes --> for everything I'm sizing by the border and not the inner contents*/
+/*margin just represents the white space we're pushing away from */
+
+.wrapper {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1000px;
+}

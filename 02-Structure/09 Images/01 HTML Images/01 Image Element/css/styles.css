@@ -1,0 +1,101 @@
+/*header section*/
+
+header {
+    height: 80px;
+    background: black;
+}
+
+/*hero section */
+
+.hero {
+    height: 600px;
+    background:white;
+    background-image: 
+        linear-gradient(
+            0deg,
+            rgb(255, 255, 255)2%,
+            rgba(75, 26, 1, 0.267)10%,
+            rgb(0, 0, 0,0)98%
+             ),    
+        url(../Image/image6.jpg);
+        
+    background-size: cover; 
+    background-position: 50% 50%;
+    /*contain will make it so that it preserves the image vs cover which means it always needs to cover the whole area*/
+
+}
+
+/*for hero sections you need it "above the fold" -capped in a way so that it doesn't take up the whole screen but enough that consumers get the point*/
+
+
+/*card section */
+section {
+    margin: 80px 0;  /*wrapper is taking care of left and right margins so you don't need to specify it */
+}
+
+/* .card {
+    height: 480px;
+    width: 300px;
+    background: peru;
+    display:inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    box-shadow: 1px 4px 20px #222;
+    margin-bottom: 20px;
+}
+
+.card-description {
+    padding: 20px;
+}
+
+.img-container {
+    width: 100%;
+}
+img {
+    width: 100%; 
+    height: 175px;
+} */
+/* as a general rule just make all images 100% of their container, if you take width off the image won't respect its container */
+
+
+/*************** AIRBNB EXERCISE ***************/
+
+
+.card2 {
+    height: 380px;
+    width: 30%;
+    background: peru;
+    display:inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    box-shadow: 1px 4px 20px #222;
+    margin-bottom: 20px;
+    border-radius: 2%;
+    
+}
+
+.card2 :hover{
+    height: 380px;
+    width: 30%;
+    background: peru;
+    display:inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    box-shadow: 1px 4px 20px #222;
+    margin-bottom: 20px;
+    border-radius: 2%;
+}
+
+.card-description2 {
+    padding: 2px;
+}
+
+.img-container2 {
+    width: 100%;
+}
+
+img {
+    width: 100%; 
+    height: 175px;
+    border-radius: 2%;
+}

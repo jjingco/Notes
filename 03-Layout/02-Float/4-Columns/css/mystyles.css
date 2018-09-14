@@ -1,0 +1,28 @@
+.main,.secondary, .third, .fourth {
+    float: left;
+}
+
+.main {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.secondary {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+}
+
+.third {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+}
+
+.fourth {
+    width: calc(25% - 20px);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

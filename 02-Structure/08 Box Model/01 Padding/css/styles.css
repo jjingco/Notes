@@ -1,0 +1,25 @@
+.box {
+    background: #29c;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    
+    /*padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 30px; */
+    padding: 20px 40px 20px 30px; /*if you only definte 2 values then it assumes those two values for the other sides*/
+    padding: 20px; /*assumes 20px all around etc.*/
+    /*padding does not influence border*/
+
+    border-top-color: black;
+    border-top-style: solid;
+    border-top-width: 2px;
+    /*sanme as below*/
+    border-top: 2px solid black; /*but if you do it this way you need to define all 4 again for the remaining sides*/
+    /*best practice is below*/
+    border: 2px solid black;
+
+    margin: 20px;  /*same idea as top in the sense that you can define all sides -or you can just use short hand aka "margin"*/
+
+}
