@@ -20,3 +20,23 @@
   margin: 0 auto;
   max-width: 1000px;
 }
+
+.row {
+  width: 100%;
+}
+.row .col {
+  float: left;
+  margin:10px 1%;
+}
+
+/*using a clearfix */
+
+.row::after{
+  content: "";
+  display: table;
+  clear:both;
+}
+
+.size-1 {
+  width: 
+}

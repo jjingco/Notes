@@ -1,0 +1,63 @@
+/* PARENT */
+.flex-container {
+    width: 70%;
+    margin: 100px auto 0;
+    background: #f55574;
+    height: 400px;
+    padding: 10px;
+
+    display: flex; 
+
+    /* values: row, column */
+    flex-direction: row;
+
+    /* default is flext-start - flex-end is really good for navigation */
+    /* another good one for justify is "center", "space-between" and "space-around" */
+    justify-content:center;
+
+    /* if items aren't given a height by default it's aligned to "stretch" meaning they all have the same elongated height */
+    align-items: center;
+
+    /* adjusts to screensize by wrapping the elements into the parent */
+    flex-wrap: wrap; 
+}
+
+/* CHILD */
+.box-1, .box-2, .box-3 {
+    height: 60px;
+    width: 60px;
+    background: #45b5e9;
+    margin: 10px;
+
+    /* how long is it along the direction -if you change the flex-direction it is adapt to it */
+    /* overrides the width so just size according to basis */
+    flex-basis: 200px;
+}
+
+.box-1 {
+    /* rate of growth */
+    flex-grow: 1;
+
+    /* or us the short-hand (Flex grow, shrink and basis : flex */
+    flex: 1 1 200px;
+}
+
+.box-2 {
+    flex-grow: 1;
+}
+
+.box-3 {
+    flex-grow: 1;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    
+
+}
+/* NOTHING BY DEFAULT IS TEXT -YOU HAVE TO SET DISPLAY VALUE TO FLEX */
+/* when you talk about flex it's about the item's children, not the item itself */
+/* by default the flex direction is row thus children is horizontal, if vertical/column then same with children */

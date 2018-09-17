@@ -1,8 +1,9 @@
+
 .row {
   width: 100%;
 }
 
-.row .column {
+.row .col {
   float: left;
   margin: 10px 1%;
 }
@@ -56,7 +57,6 @@
     .large-12  { width: 98%;                    }
 }
 
-
 .visible-for-small-only {
     display: block;
 }
@@ -68,6 +68,7 @@
 .visible-for-large-up {
     display: none;
 }
+
 
 @media only screen and (min-width: 720px) {
     .visible-for-small-only {
@@ -84,3 +85,7 @@
         display: block;
     }
 }
+
+/* float grid is very good for EI but also is flexbox */
+/* it's become the industry standard -only time not to use is hospital, insurance etc places that don't upgrade */
+

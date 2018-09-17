@@ -3,3 +3,44 @@
     height: 400px;
     background: red;
 }
+
+.large {
+    width: 100%;
+}
+
+@media screen and (max-width:900px) {
+    .box {
+        background: yellow;
+    }
+    .medium {
+        width: 50%;
+    }
+}
+
+.box {
+    background:blue;
+}
+
+/* since all are true the last statement will come first because it comes last! The heirarchy continues */
+/* eg if you switch the 900px and the 600px when you drop down to 500px the 900px is still true thus yellow screen */
+
+/****************mobile first approach -define everything (not best practice)*******************/
+/* with the top approach it's creating a definite interval of max width, with the below approach all of them can be active at once  */
+
+/* .box {
+    width: 100%;
+    height: 400px;
+    background: red;
+}
+
+@media (min-width:900px) {
+    .box {
+        background: yellow;
+    }
+}
+
+@media (min-width:600px) {
+    .box {
+        background:blue;
+    }
+} */
