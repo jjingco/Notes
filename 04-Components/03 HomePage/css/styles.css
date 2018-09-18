@@ -1,9 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * *
 General
 * * * * * * * * * * * * * * * * * * * * */
-* {
-  box-sizing: border-box;
-}
 
 .wrapper {
   width: 80%;
@@ -26,8 +23,46 @@ Header
 * * * * * * * * * * * * * * * * * * * * */
 header {
     height: 66px;
-    background: #222;
+    background:white;
 }
+
+/* header .container {
+    height: 66px;
+} */
+
+.logo {
+    width: 100px;
+    color: orangered;
+    margin-right: auto;
+}
+
+.logo span {
+    margin-left: 10px;
+}
+
+header ul {
+    margin-bottom: 0;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    height: 66px;
+    padding: 0 10px;
+    color: grey;
+
+    display: flex;
+    align-items: center;
+}
+
+header ul li a:hover {
+    background: #f3f3f3; 
+    text-decoration: none;
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * *
 Hero
