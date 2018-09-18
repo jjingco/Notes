@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form 
+        action="https://form.garysjennings.com/submit" 
+        method="post">
+
+
+        <!-- text input -->
+        <p>
+        <label for="name">
+            Name:
+            <input 
+                type="text" 
+                id="name"   
+                name="name" 
+                placeholder="name"/>  
+        </label>
+        </p>
+
+        <!-- select -->
+        <p>
+        <label for="job"> Applying For:</label>
+        <select name="job">
+            <option value="jr web dev"> jr web dev </option>
+            <option value="jr analyst"> jr analyst </option>
+            <option value="jr software dev"> jr software dev </option>
+            <option value="hr personnel"> hr personnel </option>
+            <option value="unemployed"> unemployed </option>
+        </select>
+        </p>
+
+        <p>
+        <!-- radio buttons -->
+        <label for="location"> Where do you live:</label>
+        <input 
+            type="radio" 
+            name="location" 
+            id="calgary"
+            value="calgary"/>
+        <label for="calgary"> Calgary</label>
+        <input 
+            type="radio" 
+            name="location" 
+            id="vancouver"
+            value="vancouver"/>
+        <label for="vancouver">Vancouver</label>
+        <input 
+            type="radio" 
+            name="location" 
+            id="montreal"
+            value="montreal"/>
+        <label for="montreal">Montreal</label>
+        <input 
+            type="radio" 
+            name="location" 
+            id="toronto"
+            value="toronto"/>
+        <label for="toronto">Toronto</label>
+        </p>
+
+        <p>
+        <!-- checkbox -->
+        <label for="skills">Skillset:</label>
+        <input 
+            type="checkbox"
+            name="skills"
+            id="skill1"
+            value="web development" />
+        <label for="skill1">web development</label>
+        <input 
+            type="checkbox"
+            name="skills"
+            id="skill2"
+            value="team work" />
+            <label for="skill2">team work</label>
+        <input 
+            type="checkbox"
+            name="skills"
+            id="skill3"
+            value="administration" />
+        <label for="skill3">administration</label>
+        <input 
+            type="checkbox"
+            name="skills"
+            id="skill4"
+            value="programming" />
+        <label for="skill4">programming</label>
+        </p>
+
+        <p>
+        <label for="thoughts">Additional Comments:</label>
+        <textarea name="thoughts"></textarea>
+        </p>
+        
+        <input type="submit"/>
+
+
+    </form>
+</body>
+</html>

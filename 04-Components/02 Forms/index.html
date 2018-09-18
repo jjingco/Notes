@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form 
+        action="http://form-submit.com" 
+        method="post"
+    >
+
+        <fieldset>
+            <legend> Description of Section</legend>
+
+            <!-- text input -->
+            <label for="username">
+                UserName
+                <input 
+                    type="text" 
+                    id="username"   
+                    name="username" 
+                    placeholder="example"/>  <!-- self-closing tag that doesn't grow -->
+                    <!-- types: tel, eamil, password, id are the same and an additional specification -->
+                    <!-- if you don't have an id you can't use "for" on your label so your label can't focus on the proper input box -->
+            </label>
+
+            <!-- text area -->
+            <textarea name="textarea"></textarea>
+        
+        </fieldset>
+
+        <!-- select -->
+        <select name="select">
+            <option value="one"> One </option>
+            <option value="two"> Two </option>
+            <option value="three"> Three </option>
+            <!-- the value is actually what gets submitted on your form -->
+        </select>
+
+        <!-- radio buttons -->
+        <br/>
+        <input 
+            type="radio" 
+            name="city" 
+            id="calgary"
+            value="calgary"/>
+        <label for="calgary"> Calgary</label>
+        <br/>
+        <input 
+            type="radio" 
+            name="city" 
+            id="vancouver"
+            value="vancouver"/>
+        <label for="vancouver">Vancouver</label>
+        <br/>
+        <!-- because the names are both "city", you can only select one or the other NOT BOTH -->
+
+        <!-- checkbox -->
+        <input 
+            type="checkbox"
+            name="province"
+            id="alberta"
+            value="alberta" />
+        <label for="alberta">Alberta</label>
+        <input 
+            type="checkbox"
+            name="province"
+            id="bc"
+            value="bc" />
+        <label for="bc">British Columbia</label>
+
+        <br/>
+
+        <!-- Submit =default value is SUBMIT -->
+        <input type="submit" value="ok"/>
+
+        <!-- alternative: make button -->
+        <button type="submit"> ok </button>
+
+
+
+    </form>
+</body>
+</html>
