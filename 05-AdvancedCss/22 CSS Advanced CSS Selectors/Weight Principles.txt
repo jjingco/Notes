@@ -1,0 +1,15 @@
+Weight
+
+-inheritance is weaker than if you tell it specifically what to do, even if the tag comes after, if it's generic
+compared to specific the specific will over-ride the other, for instance,
+the following principles will override the most current demands:
+
+Principles that determin weight:
+1. default styles
+2. inherited or direct
+3. specification
+4. type (tag, class, id)
+5. keywords 
+	eg taging "!important" beside the color in your css will override the other colors regardless where it's located on the page
+	-never use these or inline styles or ids --> usually shows you have no idea what you're doing
+	-specificity calculator --> classes always wins with exception of #id

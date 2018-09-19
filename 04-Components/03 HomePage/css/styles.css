@@ -12,7 +12,9 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-
+.debugger {
+    background: red;
+}
 
 
 
@@ -43,17 +45,14 @@ header {
 header ul {
     margin-bottom: 0;
     display: flex;
-}
-
-header ul li {
     list-style: none;
 }
+
 
 header ul li a {
     height: 66px;
     padding: 0 10px;
     color: grey;
-
     display: flex;
     align-items: center;
 }
@@ -63,16 +62,77 @@ header ul li a:hover {
     text-decoration: none;
 }
 
+.hamburger-icon {
+    display: none;
+    background: transparent;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    header ul {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+    .hamburger-icon:hover {
+        background: #f3f3f3; 
+        text-decoration: none;
+    }
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * *
 Hero
 * * * * * * * * * * * * * * * * * * * * */
 .hero {
-    height: 400px;
-    background: #ddd;
+    height: 600px;
+    background: linear-gradient(
+        90deg, 
+        rgba(0,0,0,0.4), 
+        rgba(0,0,0,0)), 
+        url('https://www.google.com/chromebook/static/images/features-hero.jpg');
+    background-size: cover;
+    background-position: 100% 50%;  /*center also used*/
+    color: white;
+    padding-top: 80px;
 }
 
+.hero-content {
+    width: 50%;
+}
 
+.hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 4em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero hr {
+    border-color: white;
+}
+
+.hero button {
+    color: white;
+    border: none;
+    background: #ef7547;
+    padding: 5px 10px;
+}
+
+.hero button:hover {
+    cursor: pointer;
+    background: #f18a64;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 400px;
+    }
+    .hero-content {
+        width: 100%;
+    }
+}
 
 
 /* * * * * * * * * * * * * * * * * * * * *
@@ -90,4 +150,39 @@ Footer
 footer {
     height: 300px;
     background: #F3F3F3;
+    padding: 40px 0 80px;
+}
+
+footer h2 {
+    color: #4d4d4d;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+footer ul {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 8px;
+}
+
+footer a {
+    color: grey;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.social-icons {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons li {
+    flex: 1;
 }

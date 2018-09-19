@@ -14,3 +14,18 @@ a {
     text-decoration: none;
     line-height: 60px;
 }
+
+a + a {
+    color: red;
+}
+/* any a that's a sibling of the other gets coloured red */
+
+a ~ span {
+    color:green;
+}
+/* a general sibling will be colored green */
+
+a > span {
+    color: yellow;
+}
+/* only the direct child of an a tag gets yellow */

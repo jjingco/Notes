@@ -13,3 +13,19 @@ a {
     font-weight: bold;
     text-decoration: none;
 }
+
+a:first-child {
+    background: black;
+}
+
+/* same concept with last-child */
+/* there is also nth-child(#) */
+
+a:nth-child(even) {
+    background: yellow;
+}
+
+a:nth-child(n + 2) {
+    background: purple;
+}
+/* second child and forward coloring it purple */
