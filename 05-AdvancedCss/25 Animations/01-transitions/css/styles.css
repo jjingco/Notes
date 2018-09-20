@@ -2,7 +2,67 @@ body {
     padding: 80px;
 }
 
+/* ***** TRANSITIONS **** */
+/* .box {
+    height: 100px;
+    width: 100px;
+    background: #f44;
+    transition-duration: 2s;
+    transition-property: background width; 
+    transition-timing-function: ease-in-out; 
+    transition-delay: 0.2s;
+
+    /* ORRRRR.... */
+
+    /* transition: background 1s ease-in-out 0.0;*/
+
+    /* or.... */
+
+    /* transition: background 1s; */ 
+
+    /* if you don't specify background it will happen to all 
+
+}*/
+/*you only want the background to animate*/
+/* you can comma and put multiple propertieis for the transition to specify */
+/* f12 ease-in-out can bring you to cubic bezier which you can copy and paste instead of easse-in-out */
+
+/* .box:hover {
+    background: #4ff;
+    width: 600px;
+} */
+
+/* unless it's a loop essentially you need triggers for animations */
+
+
+/* ***** TRANSFORMS **** */
+
+.container {
+    height: 100px;
+    width: 100px;
+    background: green;
+    margin-bottom: 2px;
+}
+
 .box {
     height: 100px;
     width: 100px;
+    background: #f44;
+
+    transition: 0.2s;
+    /* transform: rotate(0deg); */
+    /* transform: scale(1); */
+   
+    /* transform-origin: 0 0; */
+    /* by default this will transform from the center unless specified = 00 is top left  */
+    /* if you click back on rotate and delete scale then it looks like a door opening */
+    
+    transform: translate(0px, 0px);
 }
+
+.container:hover .box {
+    /* transform: scale(1.1) */
+    /* transform: rotate(120deg); */
+    transform: translate(100px, 100px);
+}
+/* if just .box:hover it's less stable */

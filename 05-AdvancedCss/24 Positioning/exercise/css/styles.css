@@ -2,18 +2,42 @@
   box-sizing: border-box;
 }
 
+
 .wrapper {
   width: 80%;
-  margin: 0 auto;
+  margin: 150px auto;
   max-width: 1000px;
   padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  /* background: red; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .card-image {
     background: url('http://facebook.design/public/images/card_resource_desktopkit@2x.png');
     width: 350px;
     height: 300px;
+    margin-right: 50px;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    position: static;
+
+}
+
+/* could have used display: inline-block on each caard image */
+
+.card-contents {
+  background:black;
+  color: white;
+  padding: 10px 20px;
+  top: 100%;
+  position: relative;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 0;
 }
