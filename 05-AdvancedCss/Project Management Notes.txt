@@ -1,0 +1,7 @@
+-rather than sacrificing quality, time and cost aim to cut back on features....add more in later
+-Github Projects:
+	-Projects --> create a project --> Project template : Basic Kanban
+	-can drag issue to the "to do" pile
+	-can add notes though + and click ... to convert into issues
+	-reorganize the priorities through drag
+	-drag to the other columns when you work on them

@@ -1,0 +1,24 @@
+getting an alias domain name through Zeit:
+
+-use command line
+	-first of all you need a domain name --> either through aws or zeit
+	-which ever service you want to use buy the domain name with it or you'll have to transfer it --> paperwork
+-type "now --help"
+	eg: now domains --help
+-type "now domains"
+	-now domain buy "nameof your company you propose"
+-deploy the one you want given you already have bought a site and you just want to change it to something new
+	-now alias "the one you deployed"  "your alias that you want"
+
+-if there was a problem just roll it back --> restore to original
+	-now ls --> now alias "the one you picked that had a problem" and replace it with something else (might google)
+
+-&& allows you to do multiple stuff with one command
+	eg now && now alias "the thing you want" = deploy and change the alias
+
+-subdomains can be used for demos 
+	eg demo."whatever your site is called" --> now && now alias "demo.whateveryoursite is called"
+
+note: check out stripe.com
+
+	
