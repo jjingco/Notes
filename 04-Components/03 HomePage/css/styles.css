@@ -82,6 +82,29 @@ header ul li a:hover {
 }
 
 
+/* * * * * * * * * * * * * * * *
+Hamburger Menu 
+* * * * * * * * * * * * * * * */
+
+
+.menu {
+    width: 500px;
+    background: coral;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.4s;
+    transform: translate(0px, 0px);
+}
+
+.close {
+    transform: translate(200px, 0px);
+}
+
+
+
+
 /* * * * * * * * * * * * * * * * * * * * *
 Hero
 * * * * * * * * * * * * * * * * * * * * */

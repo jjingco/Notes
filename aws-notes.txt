@@ -1,0 +1,48 @@
+Amazon Web Services (AWS) - Oregon:
+
+-https://us-west-2.console.aws.amazon.com/console/home?nc2=h_ct&region=us-west-2&src=header-signin#
+-login to console --> amazon prime account
+-eg cognito
+	-takes care of people forgetting their passwords 
+	-helps them authenticate on their own
+
+-IAM --> adds on a user to your account
+	-programmatic: it's a program
+	-management console access: a person --> rose217
+	-need to have group before creating access --> testing
+	-More info: https://docs.aws.amazon.com/general/latest/gr/root-vs-iam.html
+
+-Amazon S3:
+	-as a storage --> cheaper than most commercial services
+	-can use it to host static websites:
+		-https://aws.amazon.com/s3/pricing/
+		-Glacier storage is usually for archiving because it takes longer to retrieve
+	-create bucket to store stuff -need a unique name:
+		-by default a bucket is private
+		-you can just upload things through drag and drop
+	-hosting your website:
+		-want to make a bucket that's the same name as your domain name
+		-keep defaults
+		-grant public access
+		-go to properties and set up the index
+		-make the the page public so everyone can see it
+		-now you need to connect to a domain name --> search for route 53
+			-hosted zones --> it's something that helps with mapping
+				-create record set (creating an alias)--> yes alias
+					-alias target:route it to the one you just created in S3
+		-takes time so it won't show up right away
+	
+
+-services are either global or regional:
+	-so certain services can only be provided in specific regions
+	-if you have users in specific regions, always make sure to set it up in that region because it's faster
+	-if something goes down in that region your data is also lost so you might want to set it up in multiple regions
+
+-reserch EC2 --> elastic compute cloud --> server is constantly on --> still constantly used
+-lambda responds to traffic --> the only time it comes on for service is if there's trafic, if not it's dead (better cost savings)
+-relational databases are another huge cost
+
+-zeit is really good for static sites 
+	-if you're hitting more instances/users then this site actually costs more than aws
+	-thus if you have more traffic switch to aws
+-aws is better for dynamic --> authorization, databases, etc. 
