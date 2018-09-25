@@ -1,0 +1,55 @@
+
+Team Development: Github Flow
+-never alter the master --> test or experiment on other branches
+
+
+Github Learning Path
+-Github 101
+ 	-latitude:51.0385939
+	-longitude: -114.0972399
+	-Edit files on github -->
+	 if Checks have failed. Here is what you should do:
+		-Review the details to see why the checks are failing.
+		-Click the Files changed tab at the top of the Pull Request.
+		-On the far right side of the file header, click the pencil icon to open the web editor.
+		-Make the necessary changes.
+		-Scroll to the bottom of the page and add the commit to your branch.
+		-This will kick off a new round of checks!
+	-Merge Pull Requests:
+		-Open your Pull Request to be merged.
+		-Scroll to the bottom of the Pull Request and click the Merge pull request button.
+		-You can accept the default merge commit message.
+		-Click Confirm merge.
+		-Click Delete branch to delete the branch, as it no longer contains unique work.
+
+
+-Github for Windows
+	-Saving the Commit using VI
+		-Press the esc key.
+		-Enter :wq to save (or write) your commit message.
+	-Discarding the Commit using VI
+		-Press the esc key.
+		-Enter, :q!. This will discard the commit without discarding your changes. 
+			If you want to double check that your changes still exist, enter git status 
+			and your changes will still be displayed.
+	-figure out how to install VS and intigrate it with github
+
+
+-Github Page from Command Line
+	-located the directory you would like to copy the repository via "cd ~/"
+	-Clone the repository by replacing <URL> with clone URL you copied in the previous step. 
+	 The repository will be cloned into a new directory in this location. "git clone <URL>"
+		-YOU NEED TO INCLUDE THE HTTPS ADDRESS	
+	-Navigate into the directory of the repository you just created. 
+	  Replace with your own repository's name. "cd <REPOSITORY-NAME"
+	-"git status"  --> verifies the current state of your repository and the files it contains
+	-Create a new branch. Replace <BRANCH-NAME> with descriptive name: git branch <BRANCH-NAME>
+	-Check out to your new branch:  git checkout <BRANCH-NAME>
+	-Verify that you are now checked out to your new branch: git status
+
+
+-Merge Conflits & Git Out of Trouble
+
+
+
+https://services.github.com/on-demand/intro-to-github/
