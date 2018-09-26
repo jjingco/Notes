@@ -1,0 +1,41 @@
+-Sass was created for variables
+-Sass is converted into CSS --> it wasn't originally recognized by the browsers because the browsers 
+	only recognize css (Sass was not a product introduced by W3C or the big browser names)
+	-CSS variables (produced by the big names) aren't supported by all browsers --> thus use Sass
+
+-need nodeJS as it will be the file that's converting Sass into CSS
+-format for json files are very important -> npm init will give you the table of contents....pay attention to it
+	-npm = note package manager --> nodeJS is packed inside a C++ enviornment vs java which is just inside the brower enviorment
+	-npm install gulp --save-dev ---> installs program for you
+-first number of gulp is the version --> if you bump to the next version there maybe compatiblilty issues eg we're at ^3
+	-next number is compatiblity changes 9
+	-and the last is debugging 1
+	-^3.9.1
+	-dependencies are stuff that you need for your program to work --> when you deploy you deploy those dependencies
+		-when you do command npm install gulp --save
+	-devDependencies is only for development --> you need the library
+		-do this by default
+	-never check in node modules since it's not actually our codes
+
+-create file for gulp --> has to be called gulpfile.js        // https://gulpjs.com
+	-everything in this file is nodeJS --> can't do this in normal JS
+	-gulp runs tasks for our program that's it
+	-npm i gulp-sass --save-dev for gulp sass https://www.npmjs.com/package/gulp-sass
+	-if there's an error in your SASS it npm stops running at the point of the error so fix the error and re-run it --> npm run gulp
+	-cntrl C to stop watching....
+
+
+
+header {
+	@media (max-width: 200px) {
+	background: red; 
+	}
+	& :hover {
+	}
+
+}
+
+
+so in sasss you can nest media queries inside the cards. 
+
+
