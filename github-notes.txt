@@ -46,9 +46,13 @@ Github Learning Path
 	-Create a new branch. Replace <BRANCH-NAME> with descriptive name: git branch <BRANCH-NAME>
 	-Check out to your new branch:  git checkout <BRANCH-NAME>
 	-Verify that you are now checked out to your new branch: git status
+	-*****review commandline*****
 
 
 -Merge Conflits & Git Out of Trouble
+	-when you create a pull request and try to merge you can't until you click Resolve Conflicts
+	-resolve the conflict and you should be able to merge
+	-https://services.github.com/on-demand/merge-conflicts/ide-vs-code/
 
 
 
