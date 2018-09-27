@@ -8,10 +8,9 @@ Row
 
 .row {
   width: 100%; }
-
-.row .column {
-  float: left;
-  margin: 5px 1%; }
+  .row .column {
+    float: left;
+    margin: 5px 1%; }
 
 .row::after {
   content: "";
@@ -149,153 +148,87 @@ h1 {
   width: 450px;
   margin: 80px auto 0px; }
 
-body {
-  background: #fff; }
-
 nav {
   width: 100%;
   height: 60px;
   background: #066063;
   margin-bottom: 15px; }
+  nav .logo {
+    float: left;
+    margin: 15px;
+    background: #229599;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px; }
+  nav ul {
+    padding-top: 15px;
+    padding-right: 15px;
+    float: right; }
+  nav li {
+    display: inline-block;
+    margin: 0 10px; }
+  nav a {
+    color: white;
+    font-size: 8px; }
+  nav .button {
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 15px;
+    font-size: 8px; }
 
-nav .logo {
-  float: left;
-  margin: 15px;
-  background: #229599;
-  height: 30px;
-  width: 30px;
-  border-radius: 20px; }
-
-nav ul {
-  padding-top: 15px;
-  padding-right: 15px;
-  float: right; }
-
-nav li {
-  display: inline-block;
-  margin: 0 10px; }
-
-nav a {
-  color: white;
-  font-size: 8px; }
-
-nav .button {
-  border-radius: 50px;
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 5px 15px;
-  font-size: 8px; }
+body {
+  background: #fff; }
 
 .hero {
   background: #ddd;
   margin-bottom: 15px;
   text-align: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("../img/hero.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+  background: url("../img/hero.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 160px;
-  padding-top: 40px; }
-
-.hero {
+  padding-top: 40px;
   font-weight: bold; }
 
 .hero-title {
   background: #ddd;
   margin-bottom: 15px;
   text-align: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("../img/hero.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+  background: url("../img/hero.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 120px;
   padding-top: 40px; }
-
-.hero-title h1 {
-  font-weight: bold; }
+  .hero-title h1 {
+    font-weight: bold; }
 
 footer {
   height: 170px;
   background: #066063;
   padding-top: 30px; }
-
-footer ul {
-  display: inline-block;
-  margin-right: 20px;
-  width: 80px; }
-
-footer li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  line-height: 1; }
-
-footer h1 {
-  color: white;
-  font-weight: bold;
-  font-size: 16px; }
-
-footer a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 8px; }
-
-.card {
-  background: #229599;
-  height: 130px;
-  padding: 20px; }
-
-.product-summary-card {
-  background: #229599;
-  height: 130px;
-  padding: 20px;
-  text-align: center;
-  padding-top: 34px; }
-
-.product-summary-card .product-title {
-  color: white;
-  margin: 0;
-  font-size: 12px; }
-
-.product-summary-card .product-price {
-  color: white;
-  margin: 0;
-  font-size: 26px;
-  font-weight: bold; }
-
-.employee-card {
-  background: #229599;
-  height: 130px;
-  padding: 20px;
-  text-align: left; }
-
-.employee-card .employee-title {
-  color: white;
-  margin: 0;
-  font-size: 12px; }
-
-.employee-card .employee-name {
-  color: white;
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold; }
-
-.product-card {
-  background: #229599;
-  height: 130px;
-  padding: 20px;
-  text-align: left;
-  height: 140px; }
-
-.product-card p {
-  color: white;
-  margin: 0;
-  font-size: 12px; }
-
-.contact-container {
-  margin: 20px auto 0;
-  width: 160px; }
+  footer ul {
+    display: inline-block;
+    margin-right: 20px;
+    width: 80px; }
+  footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1; }
+  footer h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 16px; }
+  footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 8px; }
 
 input[type='text'], textarea {
   font-size: 8px;
@@ -311,16 +244,50 @@ textarea {
   font-size: 8px;
   resize: none; }
 
+.product-summary-card, .employee-card, .product-card {
+  background: #229599;
+  height: 130px;
+  padding: 20px; }
+
+.product-summary-card .product-title, .product-summary-card .product-price, .employee-card .employee-title, .employee-card .employee-name, .product-card p {
+  color: white;
+  margin: 0; }
+
+.product-summary-card {
+  text-align: center;
+  padding-top: 34px; }
+  .product-summary-card .product-title {
+    font-size: 12px; }
+  .product-summary-card .product-price {
+    font-size: 26px;
+    font-weight: bold; }
+
+.employee-card {
+  text-align: left; }
+  .employee-card .employee-title {
+    font-size: 12px; }
+  .employee-card .employee-name {
+    font-size: 16px;
+    font-weight: bold; }
+
+.product-card {
+  text-align: left;
+  height: 140px; }
+  .product-card p {
+    font-size: 12px; }
+
+.contact-container {
+  margin: 20px auto 0;
+  width: 160px; }
+
 .main-content {
   background: #eee;
   height: 170px;
   padding: 20px; }
-
-.main-content h1 {
-  font-weight: bold; }
-
-.main-content p {
-  font-size: 8px; }
+  .main-content h1 {
+    font-weight: bold; }
+  .main-content p {
+    font-size: 8px; }
 
 .sign-up {
   background: #e2d06a;

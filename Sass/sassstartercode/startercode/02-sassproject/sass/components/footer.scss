@@ -1,0 +1,29 @@
+footer {
+    height: 170px;
+    background: $primary-color;
+    padding-top: 30px;
+
+    ul {
+        display: inline-block;
+        margin-right: 20px;
+        width: 80px;
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    h1 {
+        color: $third-color;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    a {
+        color: rgba(255,255,255,0.7);
+        font-size: 8px;
+    }
+}

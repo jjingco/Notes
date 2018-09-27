@@ -21,21 +21,44 @@
 	-everything in this file is nodeJS --> can't do this in normal JS
 	-gulp runs tasks for our program that's it
 	-npm i gulp-sass --save-dev for gulp sass https://www.npmjs.com/package/gulp-sass
-	-if there's an error in your SASS it npm stops running at the point of the error so fix the error and re-run it --> npm run gulp
+	-if there's an error in your SASS it npm stops running at the point of the error so 
+		fix the error and re-run it --> npm run gulp
 	-cntrl C to stop watching....
 
 
+-@media example:
+	header {
+		@media (max-width: 200px) {
+			background: red; }
+		& :hover {...}
+		}
+	so in sasss you can nest media queries inside the cards. 
 
-header {
-	@media (max-width: 200px) {
-	background: red; 
-	}
-	& :hover {
-	}
-
-}
+-@extend .button --> takes the attributes of the button and applies it to other classes if nested underneith them
+	if you replace .button with @extend %button then the css won't even recognize the button --> almost acts like a variable
+	where the secondary and primary buttons still have the attributes but the first button no longer exists 
+	--> it's only a template 
 
 
-so in sasss you can nest media queries inside the cards. 
+-@mixin basically calculates things for you eg:
+	.hero {
+		@include background-image('the path');
+		}
+	it basically adds the templates of what you want as the background image eg if you're always using the same position,
+	linear gradient etc to your image, you can use the mixin to apply that same conditions to the new image
+	another example:
+
+		@mixin fontStyle($size) {
+			font-size: $size;
+			line-height: $size *1.4; }
+
+		p {  @include fontStyle(16px);}
+
+	-you can now re-define the gutters using bootstrap!! 
+
+
+
+
+
 
 
