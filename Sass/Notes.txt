@@ -22,8 +22,11 @@
 	-gulp runs tasks for our program that's it
 	-npm i gulp-sass --save-dev for gulp sass https://www.npmjs.com/package/gulp-sass
 	-if there's an error in your SASS it npm stops running at the point of the error so 
-		fix the error and re-run it --> npm run gulp
+		fix the error and re-run it --> npm install -g gulp --> if still not working
+		go to your folder and npm rebuild node-sass
+		-once working: npm run gulp
 	-cntrl C to stop watching....
+	-if just cloning a file from a repo...npm install
 
 
 -@media example:
