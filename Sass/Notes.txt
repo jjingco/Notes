@@ -24,6 +24,7 @@
 	-if there's an error in your SASS it npm stops running at the point of the error so 
 		fix the error and re-run it --> npm install -g gulp --> if still not working
 		go to your folder and npm rebuild node-sass
+		-if only CLI version: npm install gulp gulp-sass -save-dev
 		-once working: npm run gulp
 	-cntrl C to stop watching....
 	-if just cloning a file from a repo...npm install
